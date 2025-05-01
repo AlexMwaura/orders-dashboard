@@ -1,0 +1,54 @@
+import { Component, inject, signal ,computed, effect } from '@angular/core';
+import { OrderService } from '../services/order.service';
+import { Order } from '../models/order.model';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+
+@Component({
+  selector: 'app-order-list',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
+  templateUrl: './order-list.component.html',
+  styleUrl: './order-list.component.scss'
+})
+export class OrderListComponent {
+  private orderService = inject(OrderService);
+
+  orders = signal<Order[]>([]);
+  search = signal('');
+  pageSize = 5;
+  currentPage = signal(1);
+
+  constructor() {
+    this.fetchOrders();
+  }
+
+  fetchOrders() {
+    this.orderService.getOrders().subscribe((data) => this.orders.set(data));
+  }
+
+  get filteredOrders() {
+    const searchTerm = this.search().toLowerCase();
+    return this.orders().filter(order =>
+      order.customer.toLowerCase().includes(searchTerm) ||
+      order.id.toString().includes(searchTerm)
+    );
+  }
+
+  get paginatedOrders() {
+    const start = (this.currentPage() - 1) * this.pageSize;
+    return this.filteredOrders.slice(start, start + this.pageSize);
+  }
+
+  totalPages() {
+    return Math.ceil(this.filteredOrders.length / this.pageSize);
+  }
+
+  changePage(delta: number) {
+    const next = this.currentPage() + delta;
+    if (next >= 1 && next <= this.totalPages()) {
+      this.currentPage.set(next);
+    }
+  }
+}
