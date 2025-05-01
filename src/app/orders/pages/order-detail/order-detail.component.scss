@@ -1,0 +1,49 @@
+.order-detail {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+  
+    h2 {
+      margin-bottom: 1rem;
+    }
+  
+    .order-info {
+      margin-bottom: 2rem;
+      p {
+        margin: 0.5rem 0;
+      }
+    }
+  
+    .form-group {
+      margin-bottom: 1rem;
+  
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+  
+      select,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+      }
+    }
+  
+    button {
+      padding: 0.75rem;
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #1565c0;
+      }
+    }
+  }
+  
