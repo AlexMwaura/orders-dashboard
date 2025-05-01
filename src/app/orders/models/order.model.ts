@@ -2,7 +2,7 @@ export interface Order {
     id: number;
     date: string;
     customer: string;
-    payment: 'Pending' | 'Success';
+    payment: 'Card' | 'Cash';
     total: number;
     delivery: string;
     items: number;
