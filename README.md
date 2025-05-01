@@ -1,27 +1,71 @@
 # OrdersDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+OrdersDashboard is a single-page Angular application for managing e-commerce orders. It allows users to **view, create, edit, and delete orders** via a clean and responsive dashboard interface.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+- View a list of all orders with filtering and sorting options
+- Create new orders using a form with validation
+- Edit existing orders
+- Delete orders with confirmation
+- Mocked backend using `json-server`
+- Fully unit-tested with **Karma + Jasmine**
+- UI styled using **Sass** and modern design principles
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Tech Stack
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular** 18+
+- **Angular CLI** 18.2.3
+- **TypeScript**
+- **Sass** for styling
+- **json-server** for mocked REST API
+- **Karma + Jasmine** for unit testing
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📦 Setup Instructions
 
-## Running end-to-end tests
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/orders-dashboard.git
+   cd orders-dashboard
+2. **Install Dependencies**
+    ```bash
+    npm install
+3. **Start the mock backend**
+    ```bash
+    npm run json-server
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
+## 🧪 Running Tests
+  ```bash
+ ng test
+ 
+* Tests are written using Karma and Jasmine, and include coverage for *
 
-## Further help
+- AppComponent
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- OrderListComponent
+
+- CreateOrderComponent
+
+- OrderService
+
+---
+
+
+🧩 Design Decisions
+Modular architecture: Feature-based modules and standalone components are used to keep the codebase scalable.
+
+- Reactive Forms: Used for managing form inputs in the Create/Edit Order views with built-in validation.
+
+- Mock backend (json-server): Ideal for frontend development and testing without requiring a real backend.
+
+- Typed models: Strong typing with the Order interface improves maintainability.
+
+- Styling with Sass: Sass variables and nesting help maintain consistent design.
+
