@@ -1,1 +1,44 @@
-<p>order-list works!</p>
+<div class="order-list">
+    <div class="header">
+      <input [(ngModel)]="search()" type="text" placeholder="Search by ID or Customer..." />
+    </div>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Date</th>
+          <th>Customer</th>
+          <th>Payment</th>
+          <th>Total</th>
+          <th>Delivery</th>
+          <th>Items</th>
+          <th>Fulfillment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of paginatedOrders">
+          <td>#{{ order.id }}</td>
+          <td>{{ order.date }}</td>
+          <td>{{ order.customer }}</td>
+          <td>{{ order.payment }}</td>
+          <td>${{ order.total.toFixed(2) }}</td>
+          <td>{{ order.delivery }}</td>
+          <td>{{ order.items }} items</td>
+          <td>
+            <span [class.fulfilled]="order.fulfillment === 'Fulfilled'"
+                  [class.unfulfilled]="order.fulfillment === 'Unfulfilled'">
+              {{ order.fulfillment }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="pagination">
+      <button (click)="changePage(-1)" [disabled]="currentPage() === 1">Prev</button>
+      <span>Page {{ currentPage() }} of {{ totalPages() }}</span>
+      <button (click)="changePage(1)" [disabled]="currentPage() === totalPages()">Next</button>
+    </div>
+  </div>
+  
