@@ -1,0 +1,59 @@
+<div class="create-order">
+  <h2>Create New Order</h2>
+
+  <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Customer</label>
+      <input type="text" formControlName="customer" />
+      <span *ngIf="orderForm.get('customer')?.invalid && orderForm.get('customer')?.touched">
+        Customer is required
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" formControlName="date" />
+      <span *ngIf="orderForm.get('date')?.invalid && orderForm.get('date')?.touched">
+        Date is required
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Payment Method</label>
+      <input type="text" formControlName="payment" />
+    </div>
+
+    <div class="form-group">
+      <label>Total Amount</label>
+      <input type="number" formControlName="total" />
+      <span *ngIf="orderForm.get('total')?.invalid && orderForm.get('total')?.touched">
+        Total must be greater than 0
+      </span>
+    </div>
+
+    <div class="form-group">
+      <label>Delivery Method</label>
+      <input type="text" formControlName="delivery" />
+    </div>
+
+    <div class="form-group">
+      <label>Items Count</label>
+      <input type="number" formControlName="items" />
+    </div>
+
+    <div class="form-group">
+      <label>Fulfillment</label>
+      <select formControlName="fulfillment">
+        <option>Fulfilled</option>
+        <option>Unfulfilled</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Notes</label>
+      <textarea formControlName="notes"></textarea>
+    </div>
+
+    <button type="submit">Create Order</button>
+  </form>
+</div>
