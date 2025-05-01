@@ -1,6 +1,6 @@
 <div class="order-list">
     <div class="header">
-      <input [(ngModel)]="search()" type="text" placeholder="Search by ID or Customer..." />
+        <input [ngModel]="search()" (ngModelChange)="search.set($event)" type="text" placeholder="Search..." />
     </div>
   
     <table>
@@ -14,6 +14,8 @@
           <th>Delivery</th>
           <th>Items</th>
           <th>Fulfillment</th>
+          <th>Actions</th>
+
         </tr>
       </thead>
       <tbody>
@@ -30,6 +32,10 @@
                   [class.unfulfilled]="order.fulfillment === 'Unfulfilled'">
               {{ order.fulfillment }}
             </span>
+          </td>
+          <td> 
+            <a [routerLink]="['/orders', order.id]">Edit</a> |
+            <button (click)="deleteOrder(order.id)">Delete</button>
           </td>
         </tr>
       </tbody>

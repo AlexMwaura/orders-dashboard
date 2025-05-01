@@ -37,15 +37,16 @@ export class OrderDetailComponent {
 
   onSave() {
     if (!this.order()) return;
-
-    const updatedOrder = {
-      ...this.order(),
+  
+    const updatedOrder: Order = {
+      ...this.order()!,
       ...this.editForm.value
     };
-
-    this.orderService.updateOrder(updatedOrder.id, updatedOrder).subscribe(() => {
+  
+    this.orderService.updateOrder(updatedOrder).subscribe(() => {
       alert('Order updated successfully!');
       this.router.navigate(['/orders']);
     });
   }
+  
 }

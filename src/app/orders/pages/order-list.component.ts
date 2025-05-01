@@ -3,12 +3,13 @@ import { OrderService } from '../services/order.service';
 import { Order } from '../models/order.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-order-list',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule,RouterModule],
   templateUrl: './order-list.component.html',
   styleUrl: './order-list.component.scss'
 })
@@ -51,4 +52,14 @@ export class OrderListComponent {
       this.currentPage.set(next);
     }
   }
+  deleteOrder(orderId: number) {
+    const confirmed = window.confirm('Are you sure you want to delete this order?');
+    if (confirmed) {
+      this.orderService.deleteOrder(orderId).subscribe(() => {
+        this.orders.set(this.orders().filter(order => order.id !== orderId));
+        alert('Order deleted successfully!');
+      });
+    }
+  }
+  
 }
