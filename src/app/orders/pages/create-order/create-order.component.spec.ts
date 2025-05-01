@@ -58,7 +58,7 @@ describe('CreateOrderComponent', () => {
     const formValues: Omit<Order, 'id'> = {
       customer: 'Test Customer',
       date: '2025-05-01',
-      payment: 'Cash', // now TypeScript sees this as literal type
+      payment: 'Cash',
       total: 100,
       delivery: 'Home',
       items: 2,
