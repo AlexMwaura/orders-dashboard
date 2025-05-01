@@ -34,7 +34,6 @@ export class CreateOrderComponent {
     }
 
     this.orderService.createOrder(this.orderForm.value).subscribe(() => {
-      // Show toast here (stubbed)
       alert('Order created successfully!');
       this.router.navigate(['/orders']);
     });

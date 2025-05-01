@@ -1,255 +1,265 @@
 {
-    "orders": [
-      {
-        "id": 1,
-        "date": "2024-04-01",
-        "customer": "Amina Okello",
-        "payment": "MPesa",
-        "total": 120.5,
-        "delivery": "Courier",
-        "items": 3,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 2,
-        "date": "2024-04-03",
-        "customer": "Kwame Njoroge",
-        "payment": "Card",
-        "total": 95.75,
-        "delivery": "Pickup",
-        "items": 2,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 3,
-        "date": "2024-04-05",
-        "customer": "Zainab Chikondi",
-        "payment": "Cash",
-        "total": 67.9,
-        "delivery": "Courier",
-        "items": 1,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 4,
-        "date": "2024-04-06",
-        "customer": "Kofi Mwangi",
-        "payment": "MPesa",
-        "total": 134.2,
-        "delivery": "Pickup",
-        "items": 5,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 5,
-        "date": "2024-04-07",
-        "customer": "Fatima Abiola",
-        "payment": "Card",
-        "total": 210.0,
-        "delivery": "Courier",
-        "items": 4,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 6,
-        "date": "2024-04-08",
-        "customer": "Juma Banda",
-        "payment": "MPesa",
-        "total": 88.0,
-        "delivery": "Courier",
-        "items": 2,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 7,
-        "date": "2024-04-09",
-        "customer": "Nia Tumwine",
-        "payment": "Card",
-        "total": 115.5,
-        "delivery": "Pickup",
-        "items": 3,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 8,
-        "date": "2024-04-10",
-        "customer": "Chinedu Moyo",
-        "payment": "Cash",
-        "total": 76.3,
-        "delivery": "Courier",
-        "items": 2,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 9,
-        "date": "2024-04-11",
-        "customer": "Tariro Achieng",
-        "payment": "Card",
-        "total": 98.5,
-        "delivery": "Courier",
-        "items": 3,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 10,
-        "date": "2024-04-12",
-        "customer": "Malik Dlamini",
-        "payment": "MPesa",
-        "total": 143.2,
-        "delivery": "Pickup",
-        "items": 4,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 11,
-        "date": "2024-04-13",
-        "customer": "Asha Kibet",
-        "payment": "Cash",
-        "total": 109.4,
-        "delivery": "Courier",
-        "items": 3,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 12,
-        "date": "2024-04-14",
-        "customer": "Thabo Onwonga",
-        "payment": "MPesa",
-        "total": 84.7,
-        "delivery": "Courier",
-        "items": 2,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 13,
-        "date": "2024-04-15",
-        "customer": "Njeri Kagiso",
-        "payment": "Card",
-        "total": 99.9,
-        "delivery": "Pickup",
-        "items": 1,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 14,
-        "date": "2024-04-16",
-        "customer": "Ochieng Lumumba",
-        "payment": "Cash",
-        "total": 75.0,
-        "delivery": "Courier",
-        "items": 3,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 15,
-        "date": "2024-04-17",
-        "customer": "Lerato Simiyu",
-        "payment": "MPesa",
-        "total": 135.5,
-        "delivery": "Pickup",
-        "items": 4,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 16,
-        "date": "2024-04-18",
-        "customer": "Bakari Ngugi",
-        "payment": "Card",
-        "total": 121.1,
-        "delivery": "Courier",
-        "items": 2,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 17,
-        "date": "2024-04-19",
-        "customer": "Ngozi Mutua",
-        "payment": "Cash",
-        "total": 142.8,
-        "delivery": "Courier",
-        "items": 5,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 18,
-        "date": "2024-04-20",
-        "customer": "Brian Toure",
-        "payment": "MPesa",
-        "total": 89.9,
-        "delivery": "Pickup",
-        "items": 3,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 19,
-        "date": "2024-04-21",
-        "customer": "Amina Magaya",
-        "payment": "Card",
-        "total": 108.6,
-        "delivery": "Courier",
-        "items": 2,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 20,
-        "date": "2024-04-22",
-        "customer": "Jelani Gichuki",
-        "payment": "Cash",
-        "total": 100.0,
-        "delivery": "Courier",
-        "items": 4,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 21,
-        "date": "2024-04-23",
-        "customer": "Zubeda Otieno",
-        "payment": "MPesa",
-        "total": 95.0,
-        "delivery": "Pickup",
-        "items": 1,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 22,
-        "date": "2024-04-24",
-        "customer": "Musa Oloo",
-        "payment": "Card",
-        "total": 123.45,
-        "delivery": "Courier",
-        "items": 3,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 23,
-        "date": "2024-04-25",
-        "customer": "Farida Kimani",
-        "payment": "Cash",
-        "total": 110.0,
-        "delivery": "Courier",
-        "items": 2,
-        "fulfillment": "Unfulfilled"
-      },
-      {
-        "id": 24,
-        "date": "2024-04-26",
-        "customer": "Kamau Lwanga",
-        "payment": "MPesa",
-        "total": 136.0,
-        "delivery": "Pickup",
-        "items": 5,
-        "fulfillment": "Fulfilled"
-      },
-      {
-        "id": 25,
-        "date": "2024-04-27",
-        "customer": "Ayo Njuguna",
-        "payment": "Card",
-        "total": 150.0,
-        "delivery": "Courier",
-        "items": 4,
-        "fulfillment": "Unfulfilled"
-      }
-    ]
-  }
-  
+  "orders": [
+    {
+      "id": "1",
+      "date": "2024-04-01",
+      "customer": "Amina Okello",
+      "payment": "MPesa",
+      "total": 120.5,
+      "delivery": "Courier",
+      "items": 3,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "2",
+      "date": "2024-04-03",
+      "customer": "Kwame Njoroge",
+      "payment": "Card",
+      "total": 95.75,
+      "delivery": "Pickup",
+      "items": 2,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "3",
+      "date": "2024-04-05",
+      "customer": "Zainab Chikondi",
+      "payment": "Cash",
+      "total": 67.9,
+      "delivery": "Courier",
+      "items": 1,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "4",
+      "date": "2024-04-06",
+      "customer": "Kofi Mwangi",
+      "payment": "MPesa",
+      "total": 134.2,
+      "delivery": "Pickup",
+      "items": 5,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "5",
+      "date": "2024-04-07",
+      "customer": "Fatima Abiola",
+      "payment": "Card",
+      "total": 210,
+      "delivery": "Courier",
+      "items": 4,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "6",
+      "date": "2024-04-08",
+      "customer": "Juma Banda",
+      "payment": "MPesa",
+      "total": 88,
+      "delivery": "Courier",
+      "items": 2,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "7",
+      "date": "2024-04-09",
+      "customer": "Nia Tumwine",
+      "payment": "Card",
+      "total": 115.5,
+      "delivery": "Pickup",
+      "items": 3,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "8",
+      "date": "2024-04-10",
+      "customer": "Chinedu Moyo",
+      "payment": "Cash",
+      "total": 76.3,
+      "delivery": "Courier",
+      "items": 2,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "9",
+      "date": "2024-04-11",
+      "customer": "Tariro Achieng",
+      "payment": "Card",
+      "total": 98.5,
+      "delivery": "Courier",
+      "items": 3,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "10",
+      "date": "2024-04-12",
+      "customer": "Malik Dlamini",
+      "payment": "MPesa",
+      "total": 143.2,
+      "delivery": "Pickup",
+      "items": 4,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "11",
+      "date": "2024-04-13",
+      "customer": "Asha Kibet",
+      "payment": "Cash",
+      "total": 109.4,
+      "delivery": "Courier",
+      "items": 3,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "12",
+      "date": "2024-04-14",
+      "customer": "Thabo Onwonga",
+      "payment": "MPesa",
+      "total": 84.7,
+      "delivery": "Courier",
+      "items": 2,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "13",
+      "date": "2024-04-15",
+      "customer": "Njeri Kagiso",
+      "payment": "Card",
+      "total": 99.9,
+      "delivery": "Pickup",
+      "items": 1,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "14",
+      "date": "2024-04-16",
+      "customer": "Ochieng Lumumba",
+      "payment": "Cash",
+      "total": 75,
+      "delivery": "Courier",
+      "items": 3,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "15",
+      "date": "2024-04-17",
+      "customer": "Lerato Simiyu",
+      "payment": "MPesa",
+      "total": 135.5,
+      "delivery": "Pickup",
+      "items": 4,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "16",
+      "date": "2024-04-18",
+      "customer": "Bakari Ngugi",
+      "payment": "Card",
+      "total": 121.1,
+      "delivery": "Courier",
+      "items": 2,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "17",
+      "date": "2024-04-19",
+      "customer": "Ngozi Mutua",
+      "payment": "Cash",
+      "total": 142.8,
+      "delivery": "Courier",
+      "items": 5,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "18",
+      "date": "2024-04-20",
+      "customer": "Brian Toure",
+      "payment": "MPesa",
+      "total": 89.9,
+      "delivery": "Pickup",
+      "items": 3,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "19",
+      "date": "2024-04-21",
+      "customer": "Amina Magaya",
+      "payment": "Card",
+      "total": 108.6,
+      "delivery": "Courier",
+      "items": 2,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "20",
+      "date": "2024-04-22",
+      "customer": "Jelani Gichuki",
+      "payment": "Cash",
+      "total": 100,
+      "delivery": "Courier",
+      "items": 4,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "21",
+      "date": "2024-04-23",
+      "customer": "Zubeda Otieno",
+      "payment": "MPesa",
+      "total": 95,
+      "delivery": "Pickup",
+      "items": 1,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "22",
+      "date": "2024-04-24",
+      "customer": "Musa Oloo",
+      "payment": "Card",
+      "total": 123.45,
+      "delivery": "Courier",
+      "items": 3,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "23",
+      "date": "2024-04-25",
+      "customer": "Farida Kimani",
+      "payment": "Cash",
+      "total": 110,
+      "delivery": "Courier",
+      "items": 2,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "24",
+      "date": "2024-04-26",
+      "customer": "Kamau Lwanga",
+      "payment": "MPesa",
+      "total": 136,
+      "delivery": "Pickup",
+      "items": 5,
+      "fulfillment": "Fulfilled"
+    },
+    {
+      "id": "25",
+      "date": "2024-04-27",
+      "customer": "Ayo Njuguna",
+      "payment": "Card",
+      "total": 150,
+      "delivery": "Courier",
+      "items": 4,
+      "fulfillment": "Unfulfilled"
+    },
+    {
+      "id": "feda",
+      "customer": "Alex Mwaura",
+      "date": "2025-05-01",
+      "payment": "Cash",
+      "total": 1000,
+      "delivery": "Pick up",
+      "items": 5,
+      "fulfillment": "Fulfilled",
+      "notes": "Your order is ready"
+    }
+  ]
+}
