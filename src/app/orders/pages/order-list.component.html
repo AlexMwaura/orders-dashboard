@@ -1,6 +1,6 @@
 <div class="order-list">
     <div class="header">
-        <input [ngModel]="search()" (ngModelChange)="search.set($event)" type="text" placeholder="Search..." />
+        <input [ngModel]="search()" (ngModelChange)="search.set($event)" type="text" placeholder="Search by order id or customer name..." />
       
         <button class="create-button" routerLink="/orders/new">+ New Order</button>
       </div>
@@ -37,7 +37,7 @@
           </td>
           <td> 
             <a [routerLink]="['/orders', order.id]">Edit</a> |
-            <button (click)="deleteOrder(order.id)">Delete</button>
+            <button class="delete-button" (click)="deleteOrder(order.id)">Delete</button>
           </td>
         </tr>
       </tbody>
