@@ -1,59 +1,54 @@
-<div class="create-order">
-  <h2>Create New Order</h2>
-
-  <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-      <label>Customer</label>
-      <input type="text" formControlName="customer" />
-      <span *ngIf="orderForm.get('customer')?.invalid && orderForm.get('customer')?.touched">
-        Customer is required
-      </span>
-    </div>
-
-    <div class="form-group">
-      <label>Date</label>
-      <input type="date" formControlName="date" />
-      <span *ngIf="orderForm.get('date')?.invalid && orderForm.get('date')?.touched">
-        Date is required
-      </span>
-    </div>
-
-    <div class="form-group">
-      <label>Payment Method</label>
-      <input type="text" formControlName="payment" />
-    </div>
-
-    <div class="form-group">
-      <label>Total Amount</label>
-      <input type="number" formControlName="total" />
-      <span *ngIf="orderForm.get('total')?.invalid && orderForm.get('total')?.touched">
-        Total must be greater than 0
-      </span>
-    </div>
-
-    <div class="form-group">
-      <label>Delivery Method</label>
-      <input type="text" formControlName="delivery" />
-    </div>
-
-    <div class="form-group">
-      <label>Items Count</label>
-      <input type="number" formControlName="items" />
-    </div>
-
-    <div class="form-group">
-      <label>Fulfillment</label>
-      <select formControlName="fulfillment">
-        <option>Fulfilled</option>
-        <option>Unfulfilled</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label>Notes</label>
-      <textarea formControlName="notes"></textarea>
-    </div>
-
-    <button type="submit">Create Order</button>
-  </form>
-</div>
+.create-order {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+  
+    h2 {
+      margin-bottom: 1rem;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+  
+        label {
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+  
+        input,
+        select,
+        textarea {
+          padding: 0.5rem;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          font-size: 1rem;
+        }
+  
+        span {
+          color: red;
+          font-size: 0.85rem;
+          margin-top: 0.3rem;
+        }
+      }
+  
+      button {
+        padding: 0.75rem;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #45a049;
+        }
+      }
+    }
+  }
+  
