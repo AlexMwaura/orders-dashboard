@@ -38,7 +38,10 @@ OrdersDashboard is a single-page Angular application for managing e-commerce ord
     npm install
 3. **Start the mock backend**
     ```bash
-    npm run json-server
+    npm run start:server
+4. **Run the app**
+    ```bash
+    ng serve
 
 ---
 ## 🧪 Running Tests
